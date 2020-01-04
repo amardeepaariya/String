@@ -1,0 +1,43 @@
+/*Write a program in java to count total number of alphabets, digits and special characters in a string. Go to the editor
+
+Test Data :
+Input the string : Welcome to w3resource.com
+
+Expected Output :
+
+Number of Alphabets in the string is : 21 
+Number of Digits in the string is : 1 
+Number of Special characters in the string is : 4
+*/
+
+
+import java.util.*;
+public class String7 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the String...");
+		String st=sc.nextLine();
+		
+		int alph=0,digit=0,special=0;
+		for(int i=0;i<st.length();i++) 
+		{
+			char ch=st.charAt(i);
+			if(ch>='a'&&ch<'z'||ch>'A'&&ch<'Z') 
+			{
+				alph++;
+			}
+			else if(ch>=48 && ch<=57) 
+			{
+				digit++;
+			}
+			else 
+			{
+				special++;
+			}
+		}
+		System.out.println("Number of Alphabets in the string is : "+alph+"\nNumber of Digits in the string is : " +digit+ 
+				"\nNumber of Special characters in the string is :"+special);
+	}
+
+}
