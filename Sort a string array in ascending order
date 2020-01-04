@@ -1,0 +1,70 @@
+/*Write a java program to sort a string array in ascending order. Go to the editor
+
+Test Data :
+Input the string : Amardeep 3kumar
+
+Expected Output :
+
+After sorting the string appears like : 
+3Aaadeekmmprru 
+*/
+
+import java.util.*;
+public class String11 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the String...");
+		String st=sc.nextLine();
+		
+		char str[]=st.toCharArray();
+		int i,j,l;
+		l=str.length;
+		for(i=0;i<=l-2;i++)
+		    for(j=i+1;j<=l-1;j++)
+			if(str[i]>str[j])
+			{
+			  char ch=str[i];
+			  str[i] = str[j];
+			  str[j]=ch;
+			}
+		for(i=0;i<str.length;i++)
+			System.out.print(str[i]);
+	}
+
+}
+/*Write a java program to sort a string array in ascending order. Go to the editor
+
+Test Data :
+Input the string : w3resource
+
+Expected Output :
+
+After sorting the string appears like : 
+3ceeorrsuw 
+*/
+
+import java.util.*;
+public class String11 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the String...");
+		String st=sc.nextLine();
+		
+		char str[]=st.toCharArray();
+		int i,j,l;
+		l=str.length;
+		for(i=0;i<=l-2;i++)
+		    for(j=i+1;j<=l-1;j++)
+			if(str[i]>str[j])
+			{
+			  char ch=str[i];
+			  str[i] = str[j];
+			  str[j]=ch;
+			}
+		for(i=0;i<str.length;i++)
+			System.out.print(str[i]);
+	}
+
+}
