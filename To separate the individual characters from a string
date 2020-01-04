@@ -1,0 +1,35 @@
+/*Write a program in java to separate the individual characters from a string.Go to the editor
+
+Test Data :
+Input the string : w3resource.com
+
+Expected Output :
+
+The characters of the string are : 
+w  3  r  e  s  o  u  r  c  e  .  c  o  m 
+*/
+
+import java.util.*;
+public class String3 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the String...");
+		String st=sc.nextLine();
+		System.out.println("The characters of the string are : ");
+		for(int i=0;i<st.length();i++) 
+		{
+			char ch=st.charAt(i);
+			if(i==0)
+			{
+				System.out.print(ch);
+			}
+			else 
+			{
+				System.out.print(" "+ch);
+			}
+		}
+
+	}
+
+}
