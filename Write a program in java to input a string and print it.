@@ -1,0 +1,29 @@
+/* Write a program in java to input a string and print it.Go to the editor
+
+Test Data :
+Input the string : Welcome, w3resource
+
+Expected Output :
+
+The string you entered is : Welcome, w3resource 
+*/
+
+import java.util.*;
+public class String1 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the String :");
+		String st=sc.nextLine();
+		System.out.println("The string you entered is :");
+		for(int i=0;i<st.length();i++) {
+			char ch=st.charAt(i);
+			System.out.print(ch);
+		}
+		/*System.out.println();
+		char cq[]=st.toCharArray();
+		for(int i=0;i<st.length();i++)
+			System.out.print(cq[i]);*/
+	}
+
+}
